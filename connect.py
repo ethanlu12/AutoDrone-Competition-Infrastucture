@@ -24,9 +24,13 @@ async def setup(address):
 
 
 if __name__ == "__main__":
+    
     address = str(input("enter QTM computer's address:"))
     asyncio.ensure_future(setup(address))
     asyncio.get_event_loop().run_forever()
+    
+
+    '''
     freenove = Rover()
     current_moveset = randint(0,3) #in the case that we have 4 movement set
     iterations = 5 #in the case we want rover to execute 5 movement set
@@ -39,5 +43,5 @@ if __name__ == "__main__":
                 print("\nstoping the program, escaped is pressed")
                 abort_flag = True
 
-            
-    
+freenove.execute_path()       
+'''    
