@@ -30,16 +30,10 @@ class Rover:
     def halting(self,interval):
         self.state = 'halting'
         Rover.move(0,interval)
-    '''
-    enter movement set below
-    def execute_path(self,path_indicator)
-        if path_indicator == 0:
-            #enter code for path 0
-        elif path_indicator == 1:
-            #enter code for path 1
-        elif path_indicator == 2:
-            #enter code for path 2
-        elif path_indicator == 3
-            #enter code for path 3
-        
-    '''
+    
+    def execute_path(self):
+        Rover.move(2000,5)
+        Rover.rotate(False,2000,5)
+        Rover.halting(2)
+        Rover.rotate(True,)
+    
